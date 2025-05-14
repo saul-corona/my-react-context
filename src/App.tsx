@@ -3,7 +3,7 @@ import { Routes, Route, Link } from "react-router-dom"
 import { NotificationProvider } from "./contexts/NotificationContext"
 import NotificationButton from "./components/NotificationButton"
 import Notification from "./components/Notification"
-
+import TodoList from "./components/TodoList"
 export const NotificationApp: React.FC = () => {
   return (
     <NotificationProvider>
@@ -28,6 +28,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<NotificationApp />} ></Route>
+        <Route path="/reducer" element={<TodoList />} ></Route>
       </Routes>
     </div>
   )
