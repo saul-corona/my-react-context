@@ -1,4 +1,4 @@
-# React Context · Provider Pattern · Custom Hook · useReducer
+# React Context · Provider Pattern · Custom Hook · useReducer. Redux
 
 1. Clone repo
 2. Install dependencies `npm install`.
@@ -9,3 +9,4 @@
 ## Resources
 https://react.dev/learn/typescript#typing-usestate
 https://react.dev/reference/react/useReducer
+https://redux.js.org/introduction/getting-started

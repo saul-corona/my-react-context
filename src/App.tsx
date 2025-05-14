@@ -4,6 +4,8 @@ import { NotificationProvider } from "./contexts/NotificationContext"
 import NotificationButton from "./components/NotificationButton"
 import Notification from "./components/Notification"
 import TodoList from "./components/TodoList"
+import TodoListRedux from "./components/TodoListRedux"
+
 export const NotificationApp: React.FC = () => {
   return (
     <NotificationProvider>
@@ -22,13 +24,17 @@ function App() {
         <ul>
           <Link to="/">Notification with Context</Link>
         </ul>
-        <ul>
-          <Link to="/reducer">useReducer</Link>
-        </ul>
+          <ul>
+            <Link to="/reducer">useReducer</Link>
+          </ul>
+          <ul>
+            <Link to="/redux">Redux Toolkit</Link>
+          </ul>
       </nav>
       <Routes>
         <Route path="/" element={<NotificationApp />} ></Route>
         <Route path="/reducer" element={<TodoList />} ></Route>
+        <Route path="/redux" element={<TodoListRedux />} ></Route>
       </Routes>
     </div>
   )
